@@ -18,7 +18,7 @@ const Header = (props) => (
       <ul>
         <li key="github">
           <a
-            href="https://github.com/fahmidamostafa/kanji_learners_course/tree/simplified"
+            href="https://github.com/fahmidamostafa/kanjilearnerscourselibrary"
             target="_blank"
             rel="noopener noreferrer">
             <i className="fas fa-code" />
