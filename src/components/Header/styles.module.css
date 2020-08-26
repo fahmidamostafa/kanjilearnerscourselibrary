@@ -1,0 +1,114 @@
+.header {
+  width: 100%;
+  background-color: var(--color-red-ribbon);
+  color: var(--color-aliceblue);
+  position: relative;
+  padding: 2rem 3rem;
+  box-sizing: border-box;
+}
+
+.mainHeading {
+  display: inline-block;
+  margin: 0 0 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.subHeading {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.socialLinks {
+  position: absolute;
+  right: 0;
+  bottom: -3rem;
+}
+
+.socialLinks ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.socialLinks li {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--color-red-ribbon);
+}
+
+.socialLinks li:hover a,
+.socialLinks li:hover button {
+  color: var(--color-red-ribbon);
+}
+
+.socialLinks a,
+.socialLinks form,
+.socialLinks button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.credits {
+  position: relative;
+}
+
+.preHover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: var(--color-black);
+}
+
+.postHover {
+  display: none;
+  position: absolute;
+  top: calc(3rem + 1px);
+  right: -1px;
+  width: 20rem;
+  padding: 1rem;
+  background-color: rgba(0,0,0,0.4);
+  font-size: 1rem;
+  color: var(--color-aliceblue);
+}
+
+.postHover p {
+  margin: 0.25rem 0;
+}
+
+.preHover:hover + .postHover {
+  display: block;
+}
+
+.socialLinks button {
+  background: none;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 450px) {
+  .mainHeading {
+    font-size: 1.75rem;
+  }
+  .socialLinks {
+    bottom: -2rem;
+  }
+  .socialLinks li {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  .postHover {
+    width: 15rem;
+  }
+}

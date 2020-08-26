@@ -1,0 +1,62 @@
+.charToggle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 2rem;
+  margin: -4rem 0 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed var(--color-red-ribbon);
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.smallSquareButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  min-width: 2rem;
+  height: 2rem;
+  min-height: 2rem;
+  margin: 0 0.5rem 0 0;
+  padding: 0;
+  background-color: var(--color-brink-pink);
+  border: 1px solid var(--color-radical-red);
+  font-size: 0.8rem;
+  text-align: center;
+  letter-spacing: 0;
+  color: var(--color-black);
+  outline: none;
+}
+
+.smallSquareButton:disabled,
+.smallSquareButton:hover {
+  background-color: var(--color-cupid);
+  border: 1px solid var(--color-radical-red);
+}
+
+.smallSquareButton:focus {
+  background-color: var(--color-brink-pink);
+  border: 1px solid var(--color-black);
+}
+
+.smallSquareButton:disabled {
+  color: var(--color-black);
+  cursor: default;
+}
+
+@media (max-width: 450px) {
+  .charToggle {
+    height: 5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .charToggle {
+    height: 2rem;
+  }
+}

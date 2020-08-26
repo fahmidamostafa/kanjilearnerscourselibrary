@@ -1,0 +1,126 @@
+.characterDescription {
+  display: flex;
+  flex-direction: row;
+  border-left: 0.5rem solid var(--color-radical-red);
+  border-bottom: 1px solid var(--color-radical-red);
+  width: calc(100% - 0.5rem);
+}
+
+.characterContainer {
+  width: calc(50% - 3rem);
+  height: 20rem;
+  padding-left: 3rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.attribute {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+.characterContainer .attribute {
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.label {
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.1rem;
+}
+
+.characterContainer .label {
+  margin-bottom: 2px;
+}
+
+.character {
+  font-size: 10rem;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  margin: 0;
+}
+
+.value {
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+  width: calc(100% - 1rem);
+}
+
+.value span {
+  width: calc(100% - 2.5rem);
+  display: block;
+}
+
+.value button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-brink-pink);
+  border-radius: 1px;
+  font-size: 0.8rem;
+  color: var(--color-aliceblue);
+}
+
+.value button:hover {
+  background-color: var(--color-cupid);
+  border: 1px solid var(--color-radical-red);
+  color: var(--color-red-ribbon);
+}
+
+.meaningContainer {
+  width: 50%;
+  padding-top: 1.95rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+.vocabContainer {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 400px);
+  margin-top: 3rem;
+}
+
+.vocabEntryContainer {
+  width: 350px;
+  margin: 0 1.5rem;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  background-color: var(--color-red-ribbon);
+  font-size: 0.9rem;
+  color: var(--color-aliceblue);
+}
+
+.vocabEntry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3rem;
+  padding: 0;
+  border: 1px dotted var(--color-grey);
+  box-sizing: border-box;
+}
+
+.vocabEntry li {
+  width: calc(100% - 3rem);
+  margin: 1rem;
+  border-bottom: 1px dotted var(--color-red);
+  box-sizing: border-box;
+}

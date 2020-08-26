@@ -1,0 +1,54 @@
+:root {
+  /* black */
+  --color-black: #000;
+  --color-grey: #808080;
+
+  /* white */
+  --color-aliceblue: #f0f8ff;
+  --color-white: #fff;
+
+  /* red */
+  --color-red: #ff0000;
+  --color-red-ribbon: #e10d3d;
+  --color-radical-red: #f32e5b;
+
+  /* pink */
+  --color-brink-pink: #f65e81;
+  --color-cupid: #fbbfcd;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 125%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.App {
+  position: relative;
+  min-height: 100vh;
+  max-height: 100vh;
+  font-size: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+}
